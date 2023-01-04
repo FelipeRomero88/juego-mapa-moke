@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Righteous&display=swap');
+body {
+    background-image: url(./estadiomokepon.jpg);
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Righteous', cursive;
+
+}
+
+#escoger-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titlecls {
+    
+    font-size: 65px;
+    font-family: 'Paytone One', sans-serif;
+    color: #d6e604;
+}
+
+.subtitulo{
+    color: rgb(204, 209, 224);
+    font-size: 24px;
+}
+
+.tarjetas, .botones-atacar {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-mokepon {
+    width: 200px;
+    height: 100px;
+    background: #a4bea6;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #024b3c;
+    border: 2px solid;
+}
+.tarjeta-mokepon img {
+    width: 80px;
+}
+#boton-selecmascotas {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    color: rgb(3, 3, 175);
+    background-color: rgb(136, 221, 236);
+    border: 2px solid;
+    margin-top: 20px;
+    font-family: 'Paytone One', sans-serif;
+}
+
+input {
+    display: none
+}
+input:checked + label {
+    
+    background-color: #c44444;
+}
+
+#escoger-ataque {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.titlecls {
+    font-size: 65px;
+    font-family: 'Paytone One', sans-serif;
+    color: #d6e604;
+}
+.boton-de-ataque {
+    width: 160px;
+    background-color: aquamarine;
+    border: blue;
+    border-radius: 20px;
+    height: 60px;
+    color: rgb(6, 6, 170);
+    font-family: 'Paytone One', sans-serif;
+    font-size: 24px;
+    border: 2px solid;
+}
+#mensajes-ataques {
+    display: flex;
+    width: 380px;
+    height: 60px;
+    color: rgb(14, 14, 179);
+    background: #cccbca;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: 2px solid;
+}
+#boton-reiniciar {
+    width: 120px;
+    background-color: rgb(3, 139, 94);
+    border: blue;
+    border-radius: 20px;
+    height: 30px;
+    color: rgb(208, 255, 36);
+    font-family: 'Paytone One', sans-serif;
+}
+
+.vidas-ataques {
+    display: grid;
+    grid-template-columns: 180px 180px;
+    color: #bcbcc0;
+    
+    text-align: center;
+   
+    gap: 50px;
+    
+    
+}
+#vidas-jugador, #vidas-enemigo {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#mapa {
+    border: 2px solid white;
+}
+#ver-mapa button {
+    width: 95px;
+    height: 30px;
+    border-radius: 20px;
+    color: rgb(3, 3, 175);
+    background-color: rgb(136, 221, 236);
+    border: 2px solid;
+    margin-top: 20px;
+    font-family: 'Paytone One', sans-serif;
+}
+
+@media (max-width: 500px) {
+    .tarjetas, .botones-atacar {
+        flex-direction: column;
+    }
+     
+}
